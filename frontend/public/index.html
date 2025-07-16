@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Thread Analyzer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🎶 Music Thread Analyzer</h1>
+    <p>Paste a Reddit thread link to discover which songs and artists are trending in the comments.</p>
+  </header>
+
+  <main>
+    <form id="threadForm">
+      <label for="redditURL">Reddit Thread URL:</label>
+      <input type="url" id="redditURL" name="redditURL" placeholder="https://www.reddit.com/r/..." required />
+      <button type="submit">Analyze</button>
+    </form>
+
+    <section id="results">
+      <h2>Top Mentions</h2>
+      <ul id="leaderboard">
+        <!-- Results will be injected here -->
+      </ul>
+
+      <canvas id="chartCanvas"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 🎧 by Parley</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
